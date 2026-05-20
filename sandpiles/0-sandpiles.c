@@ -58,10 +58,14 @@ static void topple(int grid[3][3])
 			if (grid[i][j] >= 4)
 			{
 				delta[i][j] -= 4;
-				if (i > 0) delta[i - 1][j] += 1;
-				if (i < 2) delta[i + 1][j] += 1;
-				if (j > 0) delta[i][j - 1] += 1;
-				if (j < 2) delta[i][j + 1] += 1;
+				if (i > 0)
+					delta[i - 1][j] += 1;
+				if (i < 2)
+					delta[i + 1][j] += 1;
+				if (j > 0)
+					delta[i][j - 1] += 1;
+				if (j < 2)
+					delta[i][j + 1] += 1;
 			}
 		}
 	}
